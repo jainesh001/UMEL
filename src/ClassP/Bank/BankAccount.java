@@ -7,6 +7,24 @@ public class BankAccount {
     private String email;
     private long phoneNumber;
 
+    public BankAccount(){
+        this(2112,2.40,"Default name","Default email",000);
+        System.out.println("Empty Called");
+    }
+    public BankAccount(int accountNumber,double accountBalance,String customerName,String email,long phoneNumber){
+//        setAccountNumber(accountNumber); might not work in the inheritance / initialization is still not complete while loading the constructor
+        this.accountNumber=accountNumber;
+        this.accountBalance=accountBalance;
+        this.customerName=customerName;
+        this.email=email;
+        this.phoneNumber=phoneNumber;
+
+    }
+
+    public BankAccount(String customerName, String email, long phoneNumber) {
+        this(123,66,customerName,email,phoneNumber);
+    }
+
     public int getAccountNumber() {
         return accountNumber;
     }
