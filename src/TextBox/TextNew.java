@@ -32,7 +32,7 @@ public class TextNew {
         String formattedString= String.format("Your age is %d",age);
         System.out.println(formattedString);
 
-        formattedString= "Your age is %d".formatted(age);
+        formattedString= "Your age  is %d".formatted(age);
         System.out.println(formattedString);
     }
 }
