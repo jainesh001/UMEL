@@ -32,8 +32,11 @@ public class NextMain {
 
         //The compiler will only look at the reference  type, to determine if that method is on that type,
 
+        var airplane= Movie.getMovie("C", "Airplane");
+        airplane.watchMovie();
 
-//        Adventure a= (Adventure) new Movie("a");
-//        a.watchMovie();
+        var plane= new Comedy("Airplane");
+        plane.watchComedy();
+
     }
 }
