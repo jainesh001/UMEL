@@ -14,8 +14,8 @@ public class Main {
 //        player.loseHealth(11);
 //        System.out.println("Remaining health= "+player.healthRemaining());
 
-        EnhancedPlayer jim= new EnhancedPlayer("Jim");
-        System.out.println("Initial Health "+jim.healthRemaining());
+        EnhancedPlayer jim = new EnhancedPlayer("Jim");
+        System.out.println("Initial Health " + jim.healthRemaining());
 
     }
 }

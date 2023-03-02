@@ -26,29 +26,30 @@ public class Person {
     }
 
     public void setAge(int age) {
-        if(age<0 || age > 100){
-            this.age=0;
-        }else {
+        if (age < 0 || age > 100) {
+            this.age = 0;
+        } else {
             this.age = age;
         }
     }
 
-    public boolean isTeen(){
-        if(age>12 && age<20){
+    public boolean isTeen() {
+        if (age > 12 && age < 20) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
-    public String getFullName(){
-        if(firstName.isEmpty() && lastName.isEmpty()){
+
+    public String getFullName() {
+        if (firstName.isEmpty() && lastName.isEmpty()) {
             return "";
-        }else if(lastName.isEmpty()){
+        } else if (lastName.isEmpty()) {
             return firstName;
-        }else if(firstName.isEmpty()){
+        } else if (firstName.isEmpty()) {
             return lastName;
-        }else {
-            return firstName+" "+lastName;
+        } else {
+            return firstName + " " + lastName;
         }
     }
 

@@ -15,16 +15,15 @@ public class Main {
             System.out.println(s);
         }
 
-        Student pojoStudent=new Student("S345","Ann","05/11/1998","list1");
-        LPAStudent recordStudent=new LPAStudent("S989","Don","06/12/1888","list2");
+        Student pojoStudent = new Student("S345", "Ann", "05/11/1998", "list1");
+        LPAStudent recordStudent = new LPAStudent("S989", "Don", "06/12/1888", "list2");
 
         System.out.println(pojoStudent);
         System.out.println(recordStudent);
-        pojoStudent.setClassList(pojoStudent.getClassList()+"New");
+        pojoStudent.setClassList(pojoStudent.getClassList() + "New");
 
-        System.out.println(pojoStudent.getName()+" --> "+pojoStudent.getClassList());
-        System.out.println(recordStudent.name()+"--->"+recordStudent.classList());
-
+        System.out.println(pojoStudent.getName() + " --> " + pojoStudent.getClassList());
+        System.out.println(recordStudent.name() + "--->" + recordStudent.classList());
 
 
     }

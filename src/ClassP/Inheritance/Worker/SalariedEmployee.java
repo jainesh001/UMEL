@@ -2,7 +2,7 @@ package ClassP.Inheritance.Worker;
 
 import java.text.ParseException;
 
-public class SalariedEmployee extends Employee{
+public class SalariedEmployee extends Employee {
     private double annualSalary;
     private boolean isRetired;
 
@@ -11,18 +11,18 @@ public class SalariedEmployee extends Employee{
         this.annualSalary = annualSalary;
     }
 
-    public void retire(){
+    public void retire() {
         //as long as parent class doesn't override base class method we can use them
-       terminate("12/12/2025");
-       isRetired=true;
+        terminate("12/12/2025");
+        isRetired = true;
     }
 
     @Override
     public int getAge() throws ParseException {
-        if(super.getAge()>60){
-            isRetired=true;
-        }else {
-            isRetired=false;
+        if (super.getAge() > 60) {
+            isRetired = true;
+        } else {
+            isRetired = false;
         }
         return super.getAge();
     }

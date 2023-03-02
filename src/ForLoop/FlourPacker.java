@@ -8,11 +8,8 @@ public class FlourPacker {
 //        System.out.println(canPack(2,2,11));
 //        System.out.println(canPack(2,2,13));
 //        System.out.println(canPack(2,2,5));
-        System.out.println(canPack(0,5,5));
-        System.out.println(canPack(2,10,18));
-
-
-
+        System.out.println(canPack(0, 5, 5));
+        System.out.println(canPack(2, 10, 18));
 
 
     }
@@ -33,8 +30,8 @@ public class FlourPacker {
 //        }
         int remainderBigBag = goal % 5;
         int division = goal / 5;
-        if ((bigCount>=division|| smallCount>=(remainderBigBag+((division-bigCount)*5)) ) && smallCount >= remainderBigBag) {
-                return true;
+        if ((bigCount >= division || smallCount >= (remainderBigBag + ((division - bigCount) * 5))) && smallCount >= remainderBigBag) {
+            return true;
         } else {
             return false;
         }

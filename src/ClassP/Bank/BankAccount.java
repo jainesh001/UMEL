@@ -7,22 +7,23 @@ public class BankAccount {
     private String email;
     private long phoneNumber;
 
-    public BankAccount(){
-        this(2112,2.40,"Default name","Default email",000);
+    public BankAccount() {
+        this(2112, 2.40, "Default name", "Default email", 000);
         System.out.println("Empty Called");
     }
-    public BankAccount(int accountNumber,double accountBalance,String customerName,String email,long phoneNumber){
+
+    public BankAccount(int accountNumber, double accountBalance, String customerName, String email, long phoneNumber) {
 //        setAccountNumber(accountNumber); might not work in the inheritance / initialization is still not complete while loading the constructor
-        this.accountNumber=accountNumber;
-        this.accountBalance=accountBalance;
-        this.customerName=customerName;
-        this.email=email;
-        this.phoneNumber=phoneNumber;
+        this.accountNumber = accountNumber;
+        this.accountBalance = accountBalance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
 
     }
 
     public BankAccount(String customerName, String email, long phoneNumber) {
-        this(123,66,customerName,email,phoneNumber);
+        this(123, 66, customerName, email, phoneNumber);
     }
 
     public int getAccountNumber() {
@@ -64,14 +65,16 @@ public class BankAccount {
     public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public void depositFunds(double funds){
-        accountBalance=accountBalance+funds;
+
+    public void depositFunds(double funds) {
+        accountBalance = accountBalance + funds;
         System.out.println(accountBalance);
     }
-    public void withdrawFunds(double funds){
-        if(accountBalance-funds<0){
+
+    public void withdrawFunds(double funds) {
+        if (accountBalance - funds < 0) {
             System.out.println("Not allowed");
-        }else {
+        } else {
             accountBalance = accountBalance - funds;
             System.out.println(accountBalance);
         }

@@ -2,9 +2,9 @@ package TypeOne;
 
 public class ExerciseOne {
     public static void main(String[] args) {
-        int k=65;
-        char val=(char)k;
-        switch (k){
+        int k = 65;
+        char val = (char) k;
+        switch (k) {
             case 'A':
                 System.out.println(('A'));
                 break;

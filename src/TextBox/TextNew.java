@@ -2,13 +2,13 @@ package TextBox;
 
 public class TextNew {
     public static void main(String[] args) {
-        String bulletIt="Print a Bulleted List:\n"+
-                "\t\u2022 First Point\n"+
+        String bulletIt = "Print a Bulleted List:\n" +
+                "\t\u2022 First Point\n" +
                 "\t\t\u2022 Second Point";
 
         System.out.println(bulletIt);
 
-        String textBlock= """
+        String textBlock = """
                 Print a Bulleted List:
                     \u2022 First Point
                         \u2022 Second Point
@@ -16,23 +16,23 @@ public class TextNew {
 
         System.out.println(textBlock);
 
-        int age=35;
+        int age = 35;
         System.out.printf("Your age is %d%n", age);
 
-        int yearOfBirth=2023-age;
+        int yearOfBirth = 2023 - age;
         System.out.printf("Age= %d, Birth Year= %d %n", age, yearOfBirth);
 
-        System.out.printf("Age is %.2f%n",(float)age);
+        System.out.printf("Age is %.2f%n", (float) age);
 
-        for(int i=1;i<100000;i*=10){
+        for (int i = 1; i < 100000; i *= 10) {
             //6 is the width(alignment)
-            System.out.printf("Print %6d %n",i);
+            System.out.printf("Print %6d %n", i);
         }
 
-        String formattedString= String.format("Your age is %d",age);
+        String formattedString = String.format("Your age is %d", age);
         System.out.println(formattedString);
 
-        formattedString= "Your age  is %d".formatted(age);
+        formattedString = "Your age  is %d".formatted(age);
         System.out.println(formattedString);
     }
 }

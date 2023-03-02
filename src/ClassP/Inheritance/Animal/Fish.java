@@ -1,6 +1,6 @@
 package ClassP.Inheritance.Animal;
 
-public class Fish extends Animal{
+public class Fish extends Animal {
     private int fins;
     private int grills;
 
@@ -10,11 +10,11 @@ public class Fish extends Animal{
         this.grills = grills;
     }
 
-    private void moveMuscles(){
+    private void moveMuscles() {
         System.out.println("muscles moving");
     }
 
-    private void moveBackFin(){
+    private void moveBackFin() {
         System.out.println("backfin moving");
     }
 
@@ -22,7 +22,7 @@ public class Fish extends Animal{
     public void move(String speed) {
         super.move(speed);
         moveMuscles();
-        if(speed=="fast"){
+        if (speed == "fast") {
             moveBackFin();
         }
     }

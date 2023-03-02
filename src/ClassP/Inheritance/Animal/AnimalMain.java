@@ -17,8 +17,8 @@ public class AnimalMain {
         Dog wolf = new Dog("Wolf", 40);
         doAnimalStuff(wolf, "slow");
 
-        Fish goldie= new Fish("GoldFish",0.25,2,3);
-        doAnimalStuff(goldie,"fast");
+        Fish goldie = new Fish("GoldFish", 0.25, 2, 3);
+        doAnimalStuff(goldie, "fast");
 
     }
 

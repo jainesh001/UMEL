@@ -18,8 +18,8 @@ public class NextMain {
         //The compiler won't use the method return type, to figure out what
         //comedy really is, after you make this assignment. It just assumes it's an Object, and this variable
         //only has access to Object's functionality.
-     //   Object comedy = Movie.getMovie("C", "Airplane");
-      //  comedy.watchMovie();// here we are looking for watchmovie() in Object base class which object class doesn't have
+        //   Object comedy = Movie.getMovie("C", "Airplane");
+        //  comedy.watchMovie();// here we are looking for watchmovie() in Object base class which object class doesn't have
         //Now, you could assign every instance to
         //an Object reference like this, but you  wouldn't be able to do much with them,
         //without casting them to other typed references. In other words, to run watchMovie on comedy
@@ -32,11 +32,22 @@ public class NextMain {
 
         //The compiler will only look at the reference  type, to determine if that method is on that type,
 
-        var airplane= Movie.getMovie("C", "Airplane");
+        var airplane = Movie.getMovie("C", "Airplane");
         airplane.watchMovie();
 
-        var plane= new Comedy("Airplane");
+        var plane = new Comedy("Airplane");
         plane.watchComedy();
+        System.out.println("***");
+
+        Object unknownObject = Movie.getMovie("S", "Airplane");
+        if (unknownObject.getClass().getSimpleName().equals("Comedy")) {
+            Comedy c = (Comedy) unknownObject;
+            c.watchComedy();
+        } else if (unknownObject instanceof Adventure) {
+            ((Adventure) unknownObject).watchAdventure();
+        } else if (unknownObject instanceof ScienceFiction syfy) {
+            syfy.watchScienceFiction();
+        }
 
     }
 }

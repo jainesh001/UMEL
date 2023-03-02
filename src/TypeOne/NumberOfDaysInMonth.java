@@ -31,7 +31,7 @@ public class NumberOfDaysInMonth {
         }
         int leapFebValue = 29;
         int normalFebValue = 28;
-        int numberOfDays=0;
+        int numberOfDays = 0;
         switch (month) {
             case 1:
             case 3:
@@ -40,23 +40,23 @@ public class NumberOfDaysInMonth {
             case 8:
             case 10:
             case 12:
-                numberOfDays=31;
+                numberOfDays = 31;
                 break;
             case 2:
-                if(isLeapYear(year)){
-                    numberOfDays=leapFebValue;
-                }else{
-                    numberOfDays=normalFebValue;
+                if (isLeapYear(year)) {
+                    numberOfDays = leapFebValue;
+                } else {
+                    numberOfDays = normalFebValue;
                 }
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                numberOfDays=30;
+                numberOfDays = 30;
                 break;
             default:
-                numberOfDays=-1;
+                numberOfDays = -1;
                 break;
         }
         return numberOfDays;

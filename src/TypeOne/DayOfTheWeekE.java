@@ -6,7 +6,7 @@ public class DayOfTheWeekE {
         printDayOfTheWeekIfElse(2);
     }
 
-    public static void printDayOfTheWeek(int day){
+    public static void printDayOfTheWeek(int day) {
         switch (day) {
             case 0 -> System.out.println("Sunday");
             case 1 -> System.out.println("Monday");
@@ -18,24 +18,25 @@ public class DayOfTheWeekE {
             default -> System.out.println("Invalid day");
         }
     }
-    public static void printDayOfTheWeekIfElse(int day){
-        if(day ==0 ){
+
+    public static void printDayOfTheWeekIfElse(int day) {
+        if (day == 0) {
             System.out.println("Sunday");
-        }else if(day==1){
+        } else if (day == 1) {
             System.out.println("Monday");
-        }else if(day==2){
+        } else if (day == 2) {
             System.out.println("Tuesday");
-        }else if(day==3){
+        } else if (day == 3) {
             System.out.println("Wednesday");
-        }else if(day==4){
+        } else if (day == 4) {
             System.out.println("Thursday");
-        }else if(day==5){
+        } else if (day == 5) {
             System.out.println("Friday");
-        }else if(day==6){
+        } else if (day == 6) {
             System.out.println("Saturday");
-        }else{
+        } else {
             System.out.println("Invalid day");
         }
     }
 
-    }
+}

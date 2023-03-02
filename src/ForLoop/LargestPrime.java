@@ -11,16 +11,16 @@ public class LargestPrime {
         if (number <= 1) {
             return -1;
         }
-        for (int i = number/2 ; i > 1; i--) {
-            if (number % i == 0 ) {
-                boolean flag=true;
-                for (int j = 2; j <= i/2; j++) {
+        for (int i = number / 2; i > 1; i--) {
+            if (number % i == 0) {
+                boolean flag = true;
+                for (int j = 2; j <= i / 2; j++) {
                     if (i % j == 0) {
-                        flag=false;
+                        flag = false;
                         break;
                     }
                 }
-                if(flag){
+                if (flag) {
                     return i;
                 }
             }

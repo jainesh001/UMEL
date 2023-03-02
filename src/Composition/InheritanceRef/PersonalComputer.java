@@ -1,6 +1,6 @@
 package Composition.InheritanceRef;
 
-public class PersonalComputer extends Product{
+public class PersonalComputer extends Product {
     private ComputerCase computerCase;
     private Monitor monitor;
     private Motherboard motherboard;
@@ -12,11 +12,11 @@ public class PersonalComputer extends Product{
         this.motherboard = motherboard;
     }
 
-    private void drawLogo(){
-        monitor.drawPixelAt(1200,50,"yellow");
+    private void drawLogo() {
+        monitor.drawPixelAt(1200, 50, "yellow");
     }
 
-    public void powerUp(){
+    public void powerUp() {
         computerCase.pressPowerButton();
         drawLogo();
     }

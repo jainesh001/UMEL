@@ -15,9 +15,9 @@ public class Player {
 
     public void restoreHealth(int extraHealth) {
         health = health + extraHealth;
-        if(health>=100){
-            if(health>100){
-                health=100;
+        if (health >= 100) {
+            if (health > 100) {
+                health = 100;
             }
             System.out.println("Player restored to 100%");
         }
