@@ -1,4 +1,4 @@
-package AbstractP;
+package AbstractP.Animal;
 
 import java.util.ArrayList;
 

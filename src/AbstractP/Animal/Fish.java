@@ -1,4 +1,4 @@
-package AbstractP;
+package AbstractP.Animal;
 
 public class Fish extends Animal {
 

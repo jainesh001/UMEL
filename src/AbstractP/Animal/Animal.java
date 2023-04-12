@@ -1,4 +1,4 @@
-package AbstractP;
+package AbstractP.Animal;
 
 
 abstract class Mammal extends Animal {

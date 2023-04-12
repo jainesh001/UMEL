@@ -1,4 +1,4 @@
-package Arrays;
+package ArrayE;
 
 public class VarArg {
 
